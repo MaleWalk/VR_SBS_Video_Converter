@@ -33,7 +33,7 @@ A powerful Python application that converts standard 2D videos into stereoscopic
 
 ## Demo
 - GUI preview and loading bar might not be working proberly in colab.
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MaleWalk/VR_SBS_Video_Converter/blob/main/2D_to_3D_SBS_Converter_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MaleWalk/VR_SBS_Video_Converter/blob/main/2D_to_3D_SBS_Converter_Colab.ipynb)
 
 ## How It Works
 
