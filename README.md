@@ -6,7 +6,7 @@ A powerful Python application that converts standard 2D videos into stereoscopic
 
 ## Changes From Original [Repository](https://github.com/PointerSoftware/2D-to-3D-SBS-Converter)
 
-- **Optimized pipeline**: Move Video Encode Process To GPU, Speed Up by Over 10x. (A 720p, 2:04, 30fps took over 10k seconds to process, this version only took 830 seconds.)
+- **Optimized pipeline**: Move Video Encode Process To GPU, Speed Up by Over 10x. (A 66MB, 720p, 2:04, 30fps video took over 10k seconds to process, this version only took 830 seconds.)
 - **Stand Alone Python Version**
 - **No Longer Supports CPU-Only Converting**: The Program Cannot Run Without CUDA.
 - **Local Friendly**: It Will No Longer Download MiDaS Model Everytime You Start, Only The Very First Time.
@@ -22,11 +22,11 @@ A powerful Python application that converts standard 2D videos into stereoscopic
   - Convergence distance adjustment (1.0-10.0) 
   - Eye separation control (0.1-5.0)
 - **Multiple Input Sources**:
-  - Upload local video files (up to 500MB)
+  - Upload local video files (up to 1024MB)
   - Process videos from URLs including YouTube
 - **Format Support**: 
   - Input: MP4, AVI, MOV, WebM, MKV (up to 4K resolution)
-  - Output: H.264 encoded MP4 in SBS format (1920x1080)
+  - Output: H.264 encoded MP4 in SBS format (3840x2160)
 - **Real-time Preview**: Visualize parameter adjustments before processing
 - **Clean User Interface**: Intuitive Gradio-based UI with tab-based workflow
 - **Comprehensive Progress Tracking**: Detailed status updates during conversion
@@ -122,7 +122,7 @@ The output video is in Side-by-Side (SBS) format, which can be viewed in:
 ## Technical Details
 
 - **Depth Map Generation**: Uses MiDaS DPT_Large model for depth estimation
-- **Output Format**: 1920x1080 (16:9) with 960x720 (4:3) content for each eye, embedded with black bars
+- **Output Format**: 3840x2160 (16:9) with 1920x2160 (16:9) content for each eye, no black bars
 - **GPU Acceleration**: Optimized for NVIDIA GPUs with dynamic batch sizing based on available memory
 - **Memory Management**: Periodic GPU memory cleanup to handle larger videos
 - **Video Processing**: FFmpeg-based segment extraction and final encoding
