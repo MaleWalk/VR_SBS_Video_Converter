@@ -1,8 +1,15 @@
-# 2D to 3D Side-by-Side Video Converter (GPU Optimized)
+# 2D to 3D Side-by-Side Video Converter (GPU Efficiency Optimized)
 
 ![3D SBS Converter Example](https://github.com/PointerSoftware/2D-to-3D-SBS-Converter/blob/main/2D-3D-SBS.png)
 
 A powerful Python application that converts standard 2D videos into stereoscopic 3D Side-by-Side (SBS) format for VR viewing. This converter uses deep learning (MiDaS) to generate accurate depth maps and create high-quality stereoscopic 3D videos optimized for various VR headsets.
+
+## Changes From Original [Repository](https://github.com/PointerSoftware/2D-to-3D-SBS-Converter)
+
+- **Optimized pipeline**: Move Video Encode Process To GPU, Reduced latency by Over 50%
+- **Stand Alone Python Version**
+- **No Longer Supports CPU-Only Converting**: The Program Cannot Run Without CUDA
+- **Local Friendly**: It Will No Longer Download MiDaS Model Everytime You Start, Only The Very First Time.
 
 ## Features
 
