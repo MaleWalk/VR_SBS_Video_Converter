@@ -10,6 +10,7 @@ A powerful Python application that converts standard 2D videos into stereoscopic
 - **Stand Alone Python Version**
 - **No Longer Supports CPU-Only Converting**: The Program Cannot Run Without CUDA
 - **Local Friendly**: It Will No Longer Download MiDaS Model Everytime You Start, Only The Very First Time.
+- **
 
 ## Features
 
@@ -31,8 +32,8 @@ A powerful Python application that converts standard 2D videos into stereoscopic
 - **Comprehensive Progress Tracking**: Detailed status updates during conversion
 
 ## Demo
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PointerSoftware/2D-to-3D-SBS-Converter/blob/main/2D_to_3D_SBS_Converter.ipynb)
+- GUI preview and loading bar might not be working proberly in colab.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MaleWalk/VR_SBS_Video_Converter/blob/main/2D_to_3D_SBS_Converter_Colab.ipynb)
 
 ## How It Works
 
