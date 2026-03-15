@@ -61,22 +61,26 @@ To run the converter locally (requires a CUDA-capable NVIDIA GPU):
 
 1. Clone this repository:
    ```
-   git clone https://github.com/PointerSoftware/2D-to-3D-SBS-Converter.git
-   cd 2D-to-3D-SBS-Converter
+   git clone https://github.com/MaleWalk/VR_SBS_Video_Converter.git
+   cd VR_SBS_Video_Converter
    ```
 
-2. Set up a Python virtual environment:
+2. (Optional)Set up a Python virtual environment or Anaconda:
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies:
+3. (Standalone sersion only)Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-4. Run the notebook:
+4. Install ffmpeg:
+   For Windows: Download Windows version [ffmpeg](https://ffmpeg.org/download.html) and add to PATH in Environment variable.
+   For Linux: sudo apt-get install ffmpeg
+   
+5. Run the notebook:
    ```
    jupyter notebook 2D_to_3D_SBS_Converter.ipynb
    ```
