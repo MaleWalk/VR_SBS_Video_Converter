@@ -6,11 +6,11 @@ A powerful Python application that converts standard 2D videos into stereoscopic
 
 ## Changes From Original [Repository](https://github.com/PointerSoftware/2D-to-3D-SBS-Converter)
 
-- **Optimized pipeline**: Move Video Encode Process To GPU, Reduced latency by Over 50%
+- **Optimized pipeline**: Move Video Encode Process To GPU, Reduced latency by Over 50%.
 - **Stand Alone Python Version**
-- **No Longer Supports CPU-Only Converting**: The Program Cannot Run Without CUDA
+- **No Longer Supports CPU-Only Converting**: The Program Cannot Run Without CUDA.
 - **Local Friendly**: It Will No Longer Download MiDaS Model Everytime You Start, Only The Very First Time.
-- **
+- **Adjust Output Canvas To 4K**: It Now Outputs 16:9 4K half SBS(1920x2160 per eye) Video now.
 
 ## Features
 
